@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-25 11:48:26 "/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLVRBUTlJRDA7MjAyMi0wNi0yNTsiMTE6MTE6NDEgIjsyNjU3"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLVRBUTlJRDA7MjAyMi0wNi0yNTsiMTE6NDg6MjYgIjsxOzI3Nzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ponto" type="Real" array="False" size=""/>
+            <declare name="tra&#231;o" type="Real" array="False" size=""/>
+            <declare name="botao" type="Real" array="False" size=""/>
+            <assign variable="ponto" expression="botao &gt; 3"/>
+            <assign variable="traco" expression="botao &lt; 3"/>
+            <input variable="botao"/>
+            <if expression="botao &lt; 3">
+                <then>
+                    <input variable="botao"/>
+                    <comment text="ponto 1"/>
+                    <if expression="botao = 0">
+                        <then>
+                            <comment text="sem entrada"/>
+                            <output expression="&quot;Letra E&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="botao &lt; 3">
+                                <then>
+                                    <comment text="ponto"/>
+                                    <input variable="botao"/>
+                                    <if expression="botao = 0">
+                                        <then>
+                                            <comment text="sem entrada"/>
+                                            <output expression="&quot;Letra I&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="botao &lt; 3">
+                                                <then>
+                                                    <comment text="ponto"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <comment text="tra&#231;o"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
